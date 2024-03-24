@@ -4,7 +4,7 @@ import pandas as pd
 
 app = dash.Dash(__name__)
 
-df = pd.read_csv("C://Users//dguariso//Dropbox//Conferences//AIUK_2024//Data//Budget_Data.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/daniguariso/HMT_Proposal/main/Data%20Proposal/Budget_Data.csv")
 df["id"] = df.index
 
 app.layout = html.Div(children=[
