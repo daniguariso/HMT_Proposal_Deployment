@@ -3,6 +3,7 @@ from dash import Dash, dcc, html, Input, Output, callback, dash_table
 import pandas as pd
 
 app = dash.Dash(__name__)
+server = app.server
 
 df = pd.read_csv("https://raw.githubusercontent.com/daniguariso/HMT_Proposal/main/Data%20Proposal/Budget_Data.csv")
 df["id"] = df.index
